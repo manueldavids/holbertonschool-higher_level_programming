@@ -13,7 +13,7 @@ if number < 0:
     last_digit = -last_digit
 
 # Print the last digit and its classification
-print(f"Last digit of {number} is {last_digit}", end=" ")
+print(f"Last digit of {number} is {last_digit} and is greater than 5")
 
 # Check if the last digit is greater than 5
 if last_digit > 5:

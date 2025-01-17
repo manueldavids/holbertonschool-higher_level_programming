@@ -1,26 +1,26 @@
 #!/usr/bin/python3
+# Import the random module to generate random numbers
 import random
-number = random.randint(-10000, 10000)
-# YOUR CODE HERE
+
+# Generate a random number between -10000 and 10000
 number = random.randint(-10000, 10000)
 
-# Calculate the last digit of the number
-# Use abs() to get the absolute value of the number, then use % 10 to get the last digit
+# Calculate the absolute value of the last digit of the number
 last_digit = abs(number) % 10
 
 # If the number is negative, make the last digit negative
 if number < 0:
     last_digit = -last_digit
 
-# Print the last digit and its classification
-print(f"Last digit of {number} is {last_digit} and is greater than 5")
-
-# Check if the last digit is greater than 5
+# Check and print the classification of the last digit
 if last_digit > 5:
-    print("and is greater than 5")
-# Check if the last digit is 0
+    # Case: last digit is greater than 5
+    print(f"Last digit of {number} is {last_digit} and is greater than 5")
 elif last_digit == 0:
-    print("and is 0")
-# Check if the last digit is less than 6 and not 0
+    # Case: last digit is 0
+    print(f"Last digit of {number} is {last_digit} and is 0")
 else:
-    print("and is less than 6 and not 0")
+    # Case: last digit is less than 6 and not 0
+    print(f"Last digit of {number} is {last_digit} "
+          "and is less than 6 and not 0")
+

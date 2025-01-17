@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Import the random module to generate random numbers
 import random
 
 # Generate a random number between -10000 and 10000
@@ -14,13 +13,9 @@ if number < 0:
 
 # Check and print the classification of the last digit
 if last_digit > 5:
-    # Case: last digit is greater than 5
     print(f"Last digit of {number} is {last_digit} and is greater than 5")
 elif last_digit == 0:
-    # Case: last digit is 0
     print(f"Last digit of {number} is {last_digit} and is 0")
 else:
-    # Case: last digit is less than 6 and not 0
     print(f"Last digit of {number} is {last_digit} "
           "and is less than 6 and not 0")
-

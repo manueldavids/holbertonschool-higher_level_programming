@@ -7,8 +7,9 @@ if __name__ == "__main__":
     """
     from add_0 import add  # Import the add function only once
 
-    a = 1  # Define variable a
-    b = 2  # Define variable b
+    # Define variables a and b in separate lines
+    a = 1
+    b = 2
 
-    # Call the add function and print the result
+    # Print the result using the add function
     print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))

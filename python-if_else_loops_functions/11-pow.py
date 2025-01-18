@@ -11,10 +11,9 @@ def pow(a, b):
     Returns:
         The value of a raised to the power of b.
     """
-    result = 1  # Initialize the result to 1
-    if b < 0:  # Handle negative exponents
-        a = 1 / a
-        b = -b
-    for _ in range(b):  # Multiply a by itself b times
-        result *= a
-    return result
+    if b == 0:  # Any number to the power of 0 is 1
+        return 1
+    elif b < 0:  # Handle negative exponents
+        return 1 / pow(a, -b)
+    else:  # Handle positive exponents
+        return a * pow(a, b - 1)

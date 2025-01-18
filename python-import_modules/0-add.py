@@ -7,7 +7,7 @@ if __name__ == "__main__":
     """
     from add_0 import add  # Import the add function only once
 
-    # Assign values to variables a and b in separate lines
+    # Define variables a and b in separate lines
     a = 1
     b = 2
 

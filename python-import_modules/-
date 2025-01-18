@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+if __name__ == "__main__":
+    # Import the 'hidden_4' module compiled as .pyc
+    import hidden_4
+
+    # Use dir() to list all names in the module
+    names = dir(hidden_4)
+
+    # Filter names that do not start with "__"
+    valid_names = [name for name in names if not name.startswith("__")]
+
+    # Print each valid name in alphabetical order
+    for name in sorted(valid_names):
+        print(name)

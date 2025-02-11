@@ -2,8 +2,10 @@
 """
 This module provides a function to add two integers.
 
-The function ensures the inputs are either integers or floats
-and converts floats to integers before performing the addition.
+It ensures that:
+- The inputs are integers or floats.
+- Floats are converted to integers before addition.
+- Proper errors are raised for invalid inputs.
 """
 
 def add_integer(a, b=98):
@@ -18,11 +20,11 @@ def add_integer(a, b=98):
         int: The sum of the two numbers after conversion to integers.
     
     Raises:
-        TypeError: If either a or b is not an integer or float.
+        TypeError: If a or b is not an integer or float.
     """
-    if not isinstance(a, (int, float)):  # Check if 'a' is an integer or float
+    if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):  # Check if 'b' is an integer or float
+    if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
-    
-    return int(a) + int(b)  # Convert to int before adding
+
+    return int(a) + int(b)

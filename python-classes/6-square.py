@@ -12,7 +12,8 @@ class Square:
             size (int): The size of the square's sides (default is 0).
             position (tuple): The (x, y) position offset (default is (0, 0)).
         Raises:
-            TypeError: If size is not an integer or position is not a tuple of 2 positive integers.
+            TypeError: If size is not an integer or position is not a tuple
+                       of 2 positive integers.
             ValueError: If size is less than 0.
         """
         self.size = size  # Uses setter to validate size
@@ -89,4 +90,4 @@ class Square:
         print("\n" * self.__position[1], end="")
 
         for _ in range(self.__size):  # Loop through size
-            print(" " * self.__position[0] + "#" * self.__size)  # Offset spaces + square
+            print(" " * self.__position[0] + "#" * self.__size)

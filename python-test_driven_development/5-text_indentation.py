@@ -15,8 +15,10 @@ def text_indentation(text):
     for i, c in enumerate(text):
         if c in ".:?":
             print(text[start:i + 1].strip())
-            print()
+            # Solo imprime salto si no es el último carácter
+            if i + 1 < length:
+                print()
             start = i + 1
     if start < length:
-        print(text[start:].strip(), end="")
+        print(text[start:].strip())
         

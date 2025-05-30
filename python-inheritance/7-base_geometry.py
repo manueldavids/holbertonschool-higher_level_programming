@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""Module that defines BaseGeometry class with area and integer_validator
+methods."""
+
+
 class BaseGeometry:
     """Base class for geometry."""
 
@@ -12,4 +16,3 @@ class BaseGeometry:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
-        

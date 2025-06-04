@@ -35,8 +35,10 @@ class Student:
             dict: Dictionary with the requested attributes.
         """
         if isinstance(attrs, list):
-            # Filter only attributes present in both the instance and attrs list
-            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+            return {
+                k: getattr(self, k)
+                for k in attrs
+                if hasattr(self, k)
+            }
         else:
-            # Return all attributes
             return self.__dict__

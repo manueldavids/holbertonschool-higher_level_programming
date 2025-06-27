@@ -25,9 +25,7 @@ def main():
         )
 
         cursor = connection.cursor()
-        cursor.execute(
-            "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
-        )
+        cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
 
         for row in cursor.fetchall():
             print(row)

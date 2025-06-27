@@ -30,7 +30,7 @@ def main():
         # Create cursor and execute safe query with parameters
         cursor = connection.cursor()
         cursor.execute(
-            "SELECT * FROM states WHERE name = %s ORDER BY id", 
+            "SELECT * FROM states WHERE name = %s ORDER BY id",
             (sys.argv[4],)
         )
 

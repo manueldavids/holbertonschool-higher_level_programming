@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Module for filtering states by user input
-"""
+"""i
 
 import MySQLdb
 import sys

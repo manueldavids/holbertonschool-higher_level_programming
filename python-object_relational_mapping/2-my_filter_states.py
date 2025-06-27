@@ -12,7 +12,8 @@ def main():
     Main function to connect to database and filter states by name
     """
     if len(sys.argv) != 5:
-        print("Usage: ./2-my_filter_states.py <username> <password> <database> <state_name>")
+        print("Usage: ./2-my_filter_states.py <username> <password> "
+              "<database> <state_name>")
         sys.exit(1)
 
     try:
@@ -25,7 +26,11 @@ def main():
         )
 
         cursor = connection.cursor()
-        cursor.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id".format(sys.argv[4]))
+        cursor.execute(
+            "SELECT * FROM states WHERE name = '{}' ORDER BY id".format(
+                sys.argv[4]
+            )
+        )
 
         for row in cursor.fetchall():
             print(row)

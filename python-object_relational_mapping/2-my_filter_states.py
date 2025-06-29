@@ -7,7 +7,7 @@ import MySQLdb
 import sys
 
 
-def main():
+def main():XXX
     """
     Main function to connect to database and filter states by name
     """

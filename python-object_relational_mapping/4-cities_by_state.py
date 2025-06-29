@@ -6,6 +6,7 @@ Module for listing all cities with their states
 import MySQLdb
 import sys
 
+
 def main():
     """
     Main function to connect to database and list all cities with states
@@ -27,12 +28,12 @@ def main():
 
         # Create cursor for executing queries
         mycursor = connection.cursor()
-        
+
         # Execute single JOIN query to get cities with their states
         mycursor.execute("""
-            SELECT cities.id, cities.name, states.name 
-            FROM cities 
-            JOIN states ON cities.state_id = states.id 
+            SELECT cities.id, cities.name, states.name
+            FROM cities
+            JOIN states ON cities.state_id = states.id
             ORDER BY cities.id ASC
         """)
 
@@ -47,6 +48,7 @@ def main():
     except MySQLdb.Error as e:
         print(f"Error: {e}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()

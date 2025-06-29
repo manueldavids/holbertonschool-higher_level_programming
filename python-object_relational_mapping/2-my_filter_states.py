@@ -27,9 +27,8 @@ def main():
 
         cursor = connection.cursor()
         cursor.execute(
-            "SELECT * FROM states WHERE name = '{}' ORDER BY id".format(
-                sys.argv[4]
-            )
+            "SELECT * FROM states WHERE name LIKE BINARY '{}%' "
+            "ORDER BY id".format(sys.argv[4])
         )
 
         for row in cursor.fetchall():

@@ -18,7 +18,7 @@ def main():
 
     try:
         connection = MySQLdb.connect(
-            host="localhost",
+            host="localhost",x 
             port=3306,
             user=sys.argv[1],
             password=sys.argv[2],

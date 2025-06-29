@@ -11,7 +11,8 @@ from model_state import Base, State
 
 def main():
     """
-    Connects to the database, queries all State objects, and prints them sorted by id
+    Connects to the database, queries all State objects, and prints them
+    sorted by id
     """
     # Create engine to connect to MySQL database
     engine = create_engine(

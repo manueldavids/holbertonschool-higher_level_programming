@@ -6,13 +6,15 @@ Module for listing all cities of a given state (safe from SQL injection)
 import MySQLdb
 import sys
 
+
 def main():
     """
     Main function to connect to database and list all cities of a given state
     """
     # Validate 4 arguments
     if len(sys.argv) != 5:
-        print("Usage: ./5-filter_cities.py <username> <password> <database> <state_name>")
+        print("Usage: ./5-filter_cities.py <username> <password> "
+              "<database> <state_name>")
         sys.exit(1)
 
     try:
@@ -48,6 +50,7 @@ def main():
     except MySQLdb.Error as e:
         print(f"Error: {e}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()

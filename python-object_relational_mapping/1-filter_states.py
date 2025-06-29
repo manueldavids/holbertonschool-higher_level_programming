@@ -4,7 +4,7 @@ Module for listing all states from database starting with N
 """
 
 import MySQLdb
-importxsys
+import sys
 
 
 def main():

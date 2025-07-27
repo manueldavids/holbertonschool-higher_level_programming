@@ -20,4 +20,4 @@ const arg1 = process.argv[2];
 const arg2 = process.argv[3];
 
 // Print the formatted sentence
-console.log(arg1 + ' is ' + arg2); 
+console.log(arg1 + ' is ' + arg2);

@@ -21,10 +21,10 @@
 const arg = process.argv[2];
 const times = parseInt(arg);
 
-// Check if the conversion was successful and times is positive
-if (isNaN(times) || times <= 0) {
+// Check if the conversion was successful (only invalid inputs, not negative numbers)
+if (isNaN(times)) {
   console.log('Missing number of occurrences');
-} else {
+} else if (times > 0) {
   // Use a for loop to print "C is fun" the specified number of times
   for (let i = 0; i < times; i++) {
     console.log('C is fun');

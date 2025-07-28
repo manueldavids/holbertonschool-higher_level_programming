@@ -30,10 +30,11 @@ Thumbs.db
 # Log files
 *.log
 
-# Database files (for future tasks)
+# Database files (for future tasks) - BUT include specific files
 *.db
 *.sqlite
 *.sqlite3
+!products.db
 
 # CSV files (for future tasks) - BUT include specific files
 *.csv
@@ -43,3 +44,7 @@ Thumbs.db
 *.json
 !items.json
 !products.json
+
+# Python task files (testing files only)
+task_*_test.py
+test_*.py

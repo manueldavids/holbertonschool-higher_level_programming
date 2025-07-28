@@ -38,6 +38,7 @@ Thumbs.db
 # CSV files (for future tasks)
 *.csv
 
-# JSON files (for future tasks) - BUT include items.json
+# JSON files (for future tasks) - BUT include specific files
 *.json
 !items.json
+!products.json

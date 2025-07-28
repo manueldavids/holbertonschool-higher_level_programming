@@ -35,6 +35,9 @@ Thumbs.db
 *.sqlite
 *.sqlite3
 
-# CSV and JSON files (for future tasks)
+# CSV files (for future tasks)
 *.csv
+
+# JSON files (for future tasks) - BUT include items.json
 *.json
+!items.json

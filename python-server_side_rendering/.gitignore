@@ -1,0 +1,40 @@
+# Testing files
+template.txt
+test_main.py
+
+# Generated output files
+output_*.txt
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Database files (for future tasks)
+*.db
+*.sqlite
+*.sqlite3
+
+# CSV and JSON files (for future tasks)
+*.csv
+*.json
